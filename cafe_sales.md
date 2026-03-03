@@ -133,18 +133,18 @@ WHERE Items_clean IS NOT NULL GROUP BY Items_clean, EXTRACT (MONTH FROM Transact
 First thing that caught my attention was that they were some missing values, I query to see if there were some nulls I forgot to deleted from my clean table, and turns out they were 50, because when I did the cleaning I did change the ERROR and UNKNOWNS into Nulls but I didn't deleted, because is a small value compare to the dataset and it is necessary to have a date to take the values into account for this analysis, I won't take the null dates into account.
 
 I then download my results that is the aggregated table by month and item into a google spreadsheet for further analysis, the first thing I am curious about is if the sales is the same all the months and it is quite stable except for a small drop in February being $487 beyond average, so for knowing what item contribute the most we can analysis by percentage from the sales and the quantity, in the sales section we found that there where items that contribute from 3.99% to 24.11% a great difference, and the maximum contributor to that is the salad with all the maximum contribution in the sales every month, but as for the quantity that is another story, since the percentage goes from 8.06% to 15.34%, and almost every item have a similar average of sales on every month with a small variation, being:
-* January: Salad 14.20%
-* February: Coffee 14.47%
-* March: Coffee 15.34%
+* January: Sandwich 14.54%
+* February: Coffee 14.41%
+* March: Coffee 15.28%
 * April: Salad 14.34%
-* May: Sandwich 13.28%
+* May: Coffee 13.25%
 * June: Salad 14.15%
-* July: Salad 15.40%
+* July: Salad 15.29%
 * August: Coffee 14.10%
 * September: Cookie 13.94%
-* October: Coffee 15.31%
-* November: Salad 13.92%
-* December: Coffee 14.45%
+* October: Coffee 15.28%
+* November: Salad 13.87%
+* December: Coffee 14.62%
 
 -------------------------
 
